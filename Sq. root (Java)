@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class NewClass {
+   public static void main(String[] args)
+     {  String n; //Declaring Variable
+        System.out.println("To find Square Root"); //To print title Sq. root
+        System.out.println("Enter a Number : "); //Asking user input
+        Scanner myVar = new Scanner(System.in); //to get input
+        n = myVar.nextLine();  // Getting value in variable
+         try
+           { 
+	          // checking valid integer using parseInt() method 		
+               int Number = Integer.parseInt(n); 
+               // To display Output
+               System.out.println("Square root = " + Math.sqrt(Number)); 
+	         } 
+	       catch (NumberFormatException e) 
+              { 
+		             System.out.println("Wrong Input! \n"+ n + " is not a valid integer number "); 
+	            } 
+      }
+}
